@@ -1,7 +1,7 @@
-package gift.security;
+package gift.gift.security;
 
+import gift.security.LoginMemberArgumentResolver;
 import java.util.List;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ public class WebConfig implements WebMvcConfigurer {
     @Value("${secret.key}")
     private String secretKey;
 
-    private final LoginMemberArgumentResolver loginMemberArgumentResolver;
+    private final gift.security.LoginMemberArgumentResolver loginMemberArgumentResolver;
 
     public WebConfig(LoginMemberArgumentResolver loginMemberArgumentResolver) {
         this.loginMemberArgumentResolver = loginMemberArgumentResolver;
