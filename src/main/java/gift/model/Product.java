@@ -69,4 +69,8 @@ public class Product {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
+
+    public void test(){
+        System.out.println("TESTING");
+    }
 }
